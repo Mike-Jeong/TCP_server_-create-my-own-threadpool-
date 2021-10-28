@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public abstract class Worker {
+public abstract class Worker implements Observer{
 
     private List<Workerthreads> workerthreads = new ArrayList<Workerthreads>();//List of threads that belong to worker
     private boolean running = true;
