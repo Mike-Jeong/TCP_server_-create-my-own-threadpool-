@@ -1,10 +1,5 @@
-package assessment_server;
+package Server;
 
-/*
-  The Interface of Observable(Subject of Observer pattern)
- 
-  @Minsik Jeong (21135840)
- */
 import java.util.Vector;
 
 public interface Observable {
