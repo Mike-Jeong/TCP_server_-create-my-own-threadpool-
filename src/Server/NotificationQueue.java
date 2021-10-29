@@ -1,14 +1,12 @@
 package Server;
 
-import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.Queue;
 import java.util.AbstractQueue;
 import java.util.Vector;
 
-/*NotificationQueue inherits the AbstractQueue and inplemeents the Observable interface.
+/*
+  NotificationQueue inherits the AbstractQueue and inplemeents the Observable interface.
   The NotificationQueue objects are able to use the queue's method. 
   When NotificationQueue object's state has changed,  it call observer  
 */
@@ -20,7 +18,7 @@ public class NotificationQueue extends AbstractQueue<Task> implements Observable
 
     public NotificationQueue(Queue<Task> queue_i) {
         this.queue = queue_i;
-    } //Constructor of NotificationQueue   
+    }   
 
     public synchronized void enqueue(Task task) throws InterruptedException {
 
@@ -29,8 +27,7 @@ public class NotificationQueue extends AbstractQueue<Task> implements Observable
         notifyObservers(this.poll());
         System.out.println("Task has polled in queue...");
 
-    }//Task add to queue and show message
-     //After that, it notifyobservers and pass the Task which polled from queue 
+    }
 
     public synchronized Task dequeue() throws InterruptedException {
 
