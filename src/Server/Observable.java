@@ -1,7 +1,5 @@
 package Server;
 
-import java.util.Vector;
-
 public interface Observable {
 
     void addObserver(Observer o);
