@@ -1,12 +1,8 @@
-package assessment_server;
+package Server;
+
 
 import java.util.LinkedList;
 
-/*
-  Worker_add class
- 
-  @Minsik Jeong (21135840)
- */
 public class Worker_add extends Worker {
 
     NotificationQueue queue2;//The queue that is passed the task from Worker_add

@@ -1,12 +1,7 @@
-package assessment_server;
+package Server;
 
 import java.util.LinkedList;
 
-/*
-  Worker_multi class
- 
-  @Minsik Jeong (21135840)
- */
 public class Worker_multi extends Worker
 {
     LinkedList<Task> rlist;
