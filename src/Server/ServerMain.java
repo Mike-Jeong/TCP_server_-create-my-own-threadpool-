@@ -3,7 +3,7 @@ package Server;
   The class that include the main method which is starting point of the server
  */
 
-public class Server {
+public class ServerMain {
 
     
     public static void main(String[] args) throws Exception {
