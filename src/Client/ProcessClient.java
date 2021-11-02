@@ -1,26 +1,22 @@
 package Client;
 
-import java.io.Console;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.InetSocketAddress;
 import java.net.Socket;
-import java.util.Scanner;
-import java.util.concurrent.CountDownLatch;
+
 
 /*
   The class that include the main method which is starting point of the Client
   This class is for Client that make able to connect with server
- 
-  @Minsik Jeong (21135840)
  */
 public class ProcessClient {
 
     static Socket socket;
     static Socket socket2;
 
-    static void startClient() {
+    public static void startClient() {
 
         Thread thread = new Thread() {
             @Override
@@ -46,7 +42,7 @@ public class ProcessClient {
         thread.start();
     }
 
-    static void stopClient() {
+    public static void stopClient() {
         try {
             System.out.println("[Disconnection]");
 

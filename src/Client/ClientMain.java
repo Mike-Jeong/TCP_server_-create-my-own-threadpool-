@@ -2,7 +2,11 @@ package Client;
 
 public class ClientMain {
 
-    startClient();
+    ProcessClient.startClient();
+
+    
+    
+    //startClient();
     while (true) {
         Scanner sc = new Scanner(System.in);
         String message = sc.nextLine();
