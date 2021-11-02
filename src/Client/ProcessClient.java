@@ -8,7 +8,7 @@ import java.net.Socket;
 
 
 /*
-  The class that include the main method which is starting point of the Client
+  The class which is starting point of the Client
   This class is for Client that make able to connect with server
  */
 

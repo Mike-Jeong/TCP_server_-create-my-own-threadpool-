@@ -1,22 +1,27 @@
 package Client;
 
+import java.util.Scanner;
+
 public class ClientMain {
 
-    ProcessClient.startClient();
 
+    public static void startClient() {
     
+        ProcessClient.startClient();
+        
+        while (true) {
+            Scanner sc = new Scanner(System.in);
+            String message = sc.nextLine();
     
-    //startClient();
-    while (true) {
-        Scanner sc = new Scanner(System.in);
-        String message = sc.nextLine();
-
-        if (message.equals("stop client")) {
-            break;
+            if (message.equals("stop client")) {
+                break;
+            }
+            ProcessClient.send(message);
         }
-        send(message);
+        ProcessClient.stopClient();
+    
+    
     }
-    stopClient();
-}
     
 }
+    
